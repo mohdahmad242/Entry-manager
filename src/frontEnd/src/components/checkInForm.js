@@ -191,9 +191,9 @@ class EntryForm extends Component {
                                 <span style={{ color: "green" }}>
                                   {hosts.name}
                                 </span>{" "}
-                                <br></br>Phone Number -{" "}
+                                <br></br>Email -{" "}
                                 <span style={{ color: "green" }}>
-                                  {hosts.phoneNumber}
+                                  {hosts.email}
                                 </span>
                               </Form.Check.Label>
                             </Form.Check>

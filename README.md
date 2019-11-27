@@ -42,7 +42,7 @@ Features
 - Host registration form is submitted on hitting `{baseURL}/host` POST API and based on response `flash message` will appear.
 - Check In details will be posted using `{baseURL}/checkIn` API then `mail and sms` will be sent through `Sendgrid` and `Twilio` services.
 - When Check Out button is pressed, a modal will appear visitor need to fill `Email Address`, check out time will updated on database by hitting `{baseURL}/checkOut` API and mail Service will be triggerd to send meeting details to visitor.
-- On past visitor details page we are fatching all visitors details from `{baseURL}/visitor` API.
+- On past visitor details page we are fetching all visitors details from `{baseURL}/visitor` API.
 - Search bar implemented on frontend by filtering from the visitors and host data.
 >baseURL => http://localhost:4000
 
@@ -60,8 +60,8 @@ Features
 > npm run fn-install  #For Frontend dependencies 
 ```
 - Set up your database using pg admin.
-- Create .env file in root folder and add necessary credintials with varibles given below.
-> IS_DEV is true, so that server should run on development which allow to resync the database again and again after some changes on backend.
+- Create .env file in root folder and add necessary credentials with varibles given below.
+> IS_DEV is true, so that server should run on development which allow to resync the database again and again after some changes on backend in `development`.
 ```bash
   DATABASE_NAME = 'database name'
   DB_USER = 'user name'

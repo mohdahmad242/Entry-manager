@@ -1,0 +1,36 @@
+{
+  "name": "innovaccer",
+  "version": "1.0.0",
+  "description": "Assignments for SDE inter at Innovaccer",
+  "main": "app.js",
+  "scripts": {
+    "fn-install": "cd src && cd frontEnd && npm install",
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "frontEnd": "cd src && npm start --prefix frontEnd",
+    "dev": "concurrently \"npm run server\" \"npm run frontEnd\"",
+    "allInstall": "concurrently \"npm i\" \"npm run fn-install\""
+  },
+  "author": "Mohammad Ahmad",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^6.4.0",
+    "concurrently": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "glob": "^7.1.6",
+    "hogan.js": "^3.0.2",
+    "https": "^1.0.0",
+    "joi": "^14.3.1",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.4",
+    "pg": "^7.13.0",
+    "pg-hstore": "^2.3.3",
+    "request": "^2.88.0",
+    "sendgrid": "^5.2.3",
+    "sequelize": "^5.21.2",
+    "twilio": "^3.37.1",
+    "uuid": "^3.3.3"
+  }
+}

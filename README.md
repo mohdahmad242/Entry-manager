@@ -54,9 +54,10 @@ Features
     cd SummerGeeks-2020
 ```
 - Use npm to install dependencies for the project.
-  - Wait for 3-4 min, it will download all dependencies for both frontend and backend.
 ```
-> npm run allInstall
+> npm i  #For Backend dependencies
+
+> npm run fn-install  #For Frontend dependencies 
 ```
 - Set up your database using pg admin.
 - Create .env file in root folder and add necessary credintials with varibles given below.

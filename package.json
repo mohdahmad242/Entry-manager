@@ -8,8 +8,7 @@
     "start": "node app.js",
     "server": "nodemon app.js",
     "frontEnd": "cd src && npm start --prefix frontEnd",
-    "dev": "concurrently \"npm run server\" \"npm run frontEnd\"",
-    "allInstall": "concurrently \"npm i\" \"npm run fn-install\""
+    "dev": "concurrently \"npm run server\" \"npm run frontEnd\""
   },
   "author": "Mohammad Ahmad",
   "license": "ISC",

@@ -29,9 +29,17 @@ module.exports = {
       }
       const visitorDetail = await Dao.visitorDao.create(visitorData);
 
+      const hostInfo = {
+        id: createCheckInObj.hostId,
+        active : "true"
+      }
+
+      const hostDetails = await Dao.hostDao.update(hostInfo);
+      console.log("HOSTDetails",hostDetails );
       const hostDetail = await Dao.hostDao.getHost({
         id: createCheckInObj.hostId
       });
+      console.log("HOSTDetail",hostDetail );
 
       await smsService.sendMsg({
         toSMS: hostDetail.dataValues.phoneNumber,

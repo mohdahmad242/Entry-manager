@@ -37,5 +37,19 @@ module.exports = {
       console.log(error);
       throw error;
     }
+  },
+  update: async (hostObj) => {
+    try {
+      const hostResponse = await db.host.update({
+        ...hostObj
+      }, {
+        where: {
+          id: hostObj.id
+        }
+      }, );
+      return hostResponse;
+    } catch (error) {
+      console.log(error);
+    }
   }
 }

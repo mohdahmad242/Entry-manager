@@ -45,6 +45,13 @@ module.exports = {
         email: checkOutObj.email
       });
 
+      const hostInfo = {
+        id: visitorDetails.dataValues.hostId,
+        active : "false"
+      }
+
+      const hostDetail = await Dao.hostDao.update(hostInfo);
+
       const hostDetails = await Dao.hostDao.getHost({
         id: visitorDetails.dataValues.hostId
       });

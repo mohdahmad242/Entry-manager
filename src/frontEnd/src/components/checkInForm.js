@@ -175,12 +175,13 @@ class EntryForm extends Component {
                       <ListGroup variant="flush">
                         {filter.map(hosts => (
                           <ListGroup.Item>
-                            <Form.Check
+                            <Form.Check 
                               type="radio"
                               id={`check-api-radio`}
                               style={{ float: "left" }}
                             >
                               <Form.Check.Input
+                                disabled = {hosts.active}
                                 name="hostId"
                                 value={hosts.id}
                                 onChange={this.handleChange}
@@ -188,12 +189,12 @@ class EntryForm extends Component {
                               />
                               <Form.Check.Label>
                                 Name -{" "}
-                                <span style={{ color: "green" }}>
+                                <span style={{ color: `${hosts.active? "red" : "green"}` }}>
                                   {hosts.name}
                                 </span>{" "}
-                                <br></br>Phone Number -{" "}
-                                <span style={{ color: "green" }}>
-                                  {hosts.phoneNumber}
+                                <br></br>Email -{" "}
+                                <span style={{ color: `${hosts.active? "red" : "green"}` }}>
+                                  {hosts.email}
                                 </span>
                               </Form.Check.Label>
                             </Form.Check>

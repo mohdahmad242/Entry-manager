@@ -35,6 +35,7 @@ Features
 4. Visitors and host can be filtered and searched on the basis of name and mobile number.
 5. Host details can be seen by hovering on their name.
 6. Existing Host details will be present on check in form page in scrollable structure, one can search their host from given search bar.
+7. If host is `Inactive`( If he is with any Visitor), `Radio button` will be disabled and appear in `Red` color.
 ```
 
 ## Technical Approach
@@ -126,8 +127,8 @@ Features
 | ![new](https://drive.google.com/uc?export=view&id=1jL_3Ef1M1-wtgoemJ3WvAJ43kDyF48-d) |
 | Host Registration Form |
 | ![](https://drive.google.com/uc?export=view&id=1zptJPoMUruEqpbfPT_gw4n7VMvnt8_q2) | 
-| Check In Form (Host details are available in scrollable, click to select Host) |
-| ![](https://drive.google.com/uc?export=view&id=10O4Kuj1W98B31Ui6wGcosGhjrieL8B0t) | 
+| Check In Form (Details of ACTIVE(in green) and INACTIVE(in red) Host are available in scrollable, click to select Host) |
+| ![](https://drive.google.com/uc?export=view&id=1wTz9QeRDi32rpSUJcjZfHJWwQXxb6U_o) | 
 | Check Out Form |
 | ![](https://drive.google.com/uc?export=view&id=1NZigYlJT2j7Q_DKo0Y2_l6NlFAAS-29a) | 
 | All Entries Page (Host details can be seen by hovering over host name) |

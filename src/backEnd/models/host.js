@@ -15,6 +15,10 @@ module.exports = (sequelize, Sequelize) => {
     },
     address: {
       type: Sequelize.STRING
+    },
+    active: {
+      type: Sequelize.BOOLEAN,
+      defaultValue: false
     }
   }, {
     timestamps: true

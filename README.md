@@ -132,7 +132,7 @@ Features
 ```
 ***
 ## Future Features
->As `Professor Yann LeCun` syas `"Our intelligence is what makes us human, and AI is an extension of that quality."` So here we can extend the quality this software using Facial recognition.
+>As `Professor Yann LeCun` says `"Our intelligence is what makes us human, and AI is an extension of that quality."` So here we can extend the quality this software using Facial recognition.
 - We can use ml5.js (a high level implementation of tf.js) or we can make separate `micro service` using pyhton.
 - It reduce user interaction and save time. It is a key feature for every tech giant to do work in minimal time and less user interaction.
 - It will be very easy for Second time visitor, he/she has to choose host only and check in. And face recognition to check out (`Simple`).

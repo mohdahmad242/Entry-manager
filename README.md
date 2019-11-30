@@ -6,6 +6,16 @@
 ***
 >![note](https://img.shields.io/badge/Note-Important-red) - Sir I accidentally submitted SDE intern Form without repository Link with email Id md.ahmad0652@gmail.com, Now I have submitted Form with email Id khanahmad242@gmail.com `Please consider this repository as my final submission`.
 ***
+## Content 
+- [Tech Stack](https://github.com/ahmadkhan242/SummerGeeks-2020#tech-stack)
+- [General Approach](https://github.com/ahmadkhan242/SummerGeeks-2020#general-approach)
+- [Technical Approach](https://github.com/ahmadkhan242/SummerGeeks-2020#technical-approach)
+- [Installation](https://github.com/ahmadkhan242/SummerGeeks-2020#installation)
+- [Folder Structure](https://github.com/ahmadkhan242/SummerGeeks-2020#folder-structure)
+- [Sample Screenshot](https://github.com/ahmadkhan242/SummerGeeks-2020#sample-screenshot)
+- [Future Features](https://github.com/ahmadkhan242/SummerGeeks-2020#future-features)
+- [Resume](https://github.com/ahmadkhan242/SummerGeeks-2020#resume-click-here)
+***
 ## Tech Stack
 - ![nodeV](https://img.shields.io/badge/Node%20Js-v12.13.1-blue)
 - ![reactV](https://img.shields.io/badge/React%20Js-v16.12.0-blue)
@@ -25,16 +35,19 @@ Security and Caution
 1. Once a visitor has checked in, he cannot use the feature again unless he checks out.
 2. Prevention of duplicate information of existing host.
 3. Visitor needs to be physically present for verification, otherwise form can be misused.
-4. All necessary cases of error are covered, like if someone try to check out again even after checking out earlier he will be asked to check in again, etc.
+4. All necessary cases of error are covered, like if someone try to check out again even after checking out 
+    earlier he will be asked to check in again, etc.
 5. Flash messages are added for errors and success response.
 
 Features
-1. Dashboard contains data of live visitors(Checked in but not checked out yet) only, making it easier to focus on data that needs immediate attention of the administrator.
+1. Dashboard contains data of live visitors(Checked in but not checked out yet) only, making it easier to focus 
+    on data that needs immediate attention of the administrator.
 2. After a completed visit(after check out), data will be pushed(filtered out) to another page.
 3. Details of past visits can be accessed on other page after clicking button on dashboard.
 4. Visitors and host can be filtered and searched on the basis of name and mobile number.
 5. Host details can be seen by hovering on their name.
-6. Existing Host details will be present on check in form page in scrollable structure, one can search their host from given search bar.
+6. Existing Host details will be present on check in form page in scrollable structure, one can search their host 
+    from given search bar.
 7. If host is `Inactive`( If he is with any Visitor), `Radio button` will be disabled and appear in `Red` color.
 ```
 
@@ -117,6 +130,12 @@ Features
         ├── app.js {file}
         └── package.json {file}
 ```
+***
+## Future Features
+>As `Professor Yann LeCun` says `"Our intelligence is what makes us human, and AI is an extension of that quality."` So here we can extend the quality this software using Facial recognition.
+- We can use ml5.js (a high level implementation of tf.js) or we can make separate `micro service` using pyhton.
+- It reduce user interaction and save time. It is a key feature for every tech giant to do work in minimal time and less user interaction.
+- It will be very easy for Second time visitor, he/she has to choose host only and check in. And face recognition to check out (`Simple`).
 ***
 ## Sample Screenshot
 > All Screenshots [Click Here](https://drive.google.com/open?id=1sFy_wx7CQI99mlkvQyXcZu5pDbjMGVmO)

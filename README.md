@@ -132,7 +132,7 @@ Features
 | Check Out Form |
 | ![](https://drive.google.com/uc?export=view&id=1NZigYlJT2j7Q_DKo0Y2_l6NlFAAS-29a) | 
 | All Entries Page (Host details can be seen by hovering over host name) |
-| ![](https://drive.google.com/uc?export=view&id=1gWe3KM_gpksZqel9LpfjNEullvGhtYlI) | 
+| ![](https://drive.google.com/uc?export=view&id=1OIuNQG42FtB2fbRSwNdv91ssEqfBNFMn) | 
 ***
 ### Thanks and Regards
 #### Mohammad Ahmad 

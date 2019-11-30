@@ -16,7 +16,7 @@ module.exports = {
       }
       var checkOutFlag = false;
       for (var i = 0; i < isVisitor.length; i++) {
-        if (isVisitor[i].checkOutTime == null) {
+        if (isVisitor[i].checkOutTime == null || isVisitor[i].checkOutTime =="Invalid date") {
           checkOutFlag = true;
           break;
         }
@@ -29,14 +29,10 @@ module.exports = {
       }
 
       let dateOb = new Date();
-      const time = dateOb.toLocaleString([], {
-        hour: '2-digit',
-        minute: '2-digit'
-      });
 
       const visitorInfo = {
         email: checkOutObj.email,
-        checkOutTime: `${time}`
+        checkOutTime: `${dateOb}`
       }
 
       const visitorDetail = await Dao.visitorDao.update(visitorInfo);

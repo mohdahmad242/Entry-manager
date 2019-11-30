@@ -90,8 +90,9 @@ class PastEntryDashboard extends Component {
                   <th>Name</th>
                   <th>Phone Number</th>
                   <th>Email</th>
-                  <th>Check-In</th>
-                  <th>Check-Out</th>
+                  <th>Date</th>
+                  <th>Check-In Time</th>
+                  <th>Check-Out Time</th>
                   <th>Host</th>
                 </tr>
               </thead>
@@ -102,8 +103,9 @@ class PastEntryDashboard extends Component {
                     <td>{visitors.name}</td>
                     <td>{visitors.phoneNumber}</td>
                     <td>{visitors.email}</td>
-                    <td style={{ width: "7rem" }}>{visitors.checkInTime}</td>
-                    <td style={{ width: "8rem" }}>{visitors.checkOutTime}</td>
+                    <td>{(visitors.checkInTime).slice(0, 10)}</td>
+                    <td style={{ width: "9rem" }}>{(visitors.checkInTime).slice(10, 19)}</td>
+                    <td style={{ width: "10rem" }}>{visitors.checkOutTime == "Invalid date" ? null: (visitors.checkOutTime).slice(10, 19)}</td>
                     <td>
                       <OverlayTrigger
                         key="none"

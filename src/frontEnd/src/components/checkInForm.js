@@ -63,7 +63,7 @@ class EntryForm extends Component {
           title: "Success",
           icon: "success",
           closeOnClickOutside: true,
-          timer: 3000
+          timer: 2000
         }).then(() => {
           this.props.history.push("/", true);
         });
@@ -75,7 +75,7 @@ class EntryForm extends Component {
           icon: "error",
           className: "red-bg",
           closeOnClickOutside: true,
-          timer: 3000
+          timer: 2000
         }).then(() => {
           this.componentDidMount();
         });

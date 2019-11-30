@@ -1,3 +1,4 @@
+const moment = require('moment');
 module.exports = (sequelize, Sequelize) => {
   const visitor = sequelize.define("visitor", {
     id: {
@@ -14,13 +15,19 @@ module.exports = (sequelize, Sequelize) => {
       type: Sequelize.STRING
     },
     checkInTime: {
-      type: Sequelize.STRING
+      type: Sequelize.DATE,
+      defaultValue: null,
+      get() {
+        return moment(this.getDataValue('checkInTime')).format('DD/MM/YYYY hh:mm A');
+      }
     },
     checkOutTime: {
-      type: Sequelize.STRING
+      type: Sequelize.DATE,
+      defaultValue: null,
+      get() {
+        return moment(this.getDataValue('checkOutTime')).format('DD/MM/YYYY hh:mm A');
+      }
     }
-  }, {
-    timestamps: true
   });
 
   visitor.associate = models => {

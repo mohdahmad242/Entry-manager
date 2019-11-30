@@ -26,11 +26,11 @@ server.use((err, res) => {
   });
 });
 server.listen(PORT, () => {
-  db.sequelize
+  db.sequelize 
     .authenticate()
     .then(() => {
       console.log("Connection has been established successfully.");
-      db.sequelize.sync({ force: config.isDev }).then(() => {
+      db.sequelize.sync({ force: (config.isDev == 'true'? true: false) }).then(() => {
         console.log("Database Synced Successfully");
         console.log(`Server started on port: ${PORT}`);
       });

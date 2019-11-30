@@ -60,7 +60,7 @@ class Dashboard extends Component {
           title: "Success",
           icon: "success",
           closeOnClickOutside: true,
-          timer: 3000
+          timer: 2000
         }).then(() => {
           this.props.history.push("/", true);
         });
@@ -94,7 +94,7 @@ class Dashboard extends Component {
           visitor.phoneNumber
             .toLowerCase()
             .indexOf(this.state.search.toLowerCase()) !== -1) &&
-        visitor.checkOutTime == null
+        ( visitor.checkOutTime == null || visitor.checkOutTime == "Invalid date")
       );
     });
     if (this.props.location.state == true) {
@@ -148,8 +148,8 @@ class Dashboard extends Component {
                       <tr>
                         <td>{i + 1}</td>
                         <td>{visitors.name}</td>
-                        <td>{visitors.checkInTime}</td>
-                        <td>{visitors.checkOutTime}</td>
+                        <td>{(visitors.checkInTime).slice(10, 19)}</td>
+                        <td>{visitors.checkOutTime == "Invalid date" ? null: (visitors.checkOutTime).slice(10, 19)}</td>
                         <td>
                           <OverlayTrigger
                             key="none"
@@ -251,7 +251,6 @@ class Dashboard extends Component {
               </Col>
             </Row>
           </Jumbotron>
-          {/* </Container> */}
         </div>
       </div>
     );

@@ -19,12 +19,12 @@ module.exports = {
       }
 
       let dateOb = new Date();
-      const time = dateOb.toLocaleString([], {
-        hour: '2-digit',
-        minute: '2-digit'
-      });
+    
+      const time = dateOb.toLocaleString()
+      console.log("TIME", time);
+      console.log(dateOb);
       const visitorData = {
-        checkInTime: `${time}`,
+        checkInTime: `${dateOb}`,
         ...createCheckInObj
       }
       const visitorDetail = await Dao.visitorDao.create(visitorData);
@@ -39,7 +39,6 @@ module.exports = {
       const hostDetail = await Dao.hostDao.getHost({
         id: createCheckInObj.hostId
       });
-      console.log("HOSTDetail",hostDetail );
 
       await smsService.sendMsg({
         toSMS: hostDetail.dataValues.phoneNumber,

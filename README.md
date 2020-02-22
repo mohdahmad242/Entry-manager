@@ -2,9 +2,7 @@
 >A minimum viable product
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) ![dip](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen)
->Innovaccer Summergeeks 2020 SDE Inter Assignment.
-***
->![note](https://img.shields.io/badge/Note-Important-red) - Sir I accidentally submitted SDE intern Form without repository Link with email Id md.ahmad0652@gmail.com, Now I have submitted Form with email Id khanahmad242@gmail.com `Please consider this repository as my final submission`.
+
 ***
 ## Content 
 - [Tech Stack](https://github.com/ahmadkhan242/SummerGeeks-2020#tech-stack)

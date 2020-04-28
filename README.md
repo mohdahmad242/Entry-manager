@@ -62,8 +62,8 @@ Features
 ## Installation
 - Clone the repository using `git clone` and then change the directory to root of the project
 ``` 
-    git clone https://github.com/ahmadkhan242/SummerGeeks-2020.git
-    cd SummerGeeks-2020
+    git clone https://github.com/ahmadkhan242/Entry-manager.git
+    cd Entry-manager
 ```
 - Use npm to install dependencies for the project.
 ```
@@ -108,7 +108,7 @@ Features
 - `validations` - here each file refer to specific routes, and use for payload validations.
 > In above folders One `index.js` file is common to dao, models, routes and services. This file helps to import all files from folder by just importing that folder. Here I used glob package for this.
 ```bash
-─── SummerGeeks-2020
+─── Entry-manager
     ├── src
     │   ├── backEnd
         │    ├── config
